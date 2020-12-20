@@ -1,2 +1,2 @@
-# typescript-project-template
+# score-calculator
 Template for starting project using TypeScript

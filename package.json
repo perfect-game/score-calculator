@@ -1,5 +1,5 @@
 {
-  "name": "typescript-project-template",
+  "name": "score-calculator",
   "version": "1.0.0",
   "description": "Template for starting project using TypeScript",
   "main": "./dist/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seonggukchoi/typescript-project-template.git"
+    "url": "git+https://github.com/perfect-game/score-calculator.git"
   },
   "author": "seonggukchoi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seonggukchoi/typescript-project-template/issues"
+    "url": "https://github.com/perfect-game/score-calculator/issues"
   },
-  "homepage": "https://github.com/seonggukchoi/typescript-project-template#readme",
+  "homepage": "https://github.com/perfect-game/score-calculator#readme",
   "dependencies": {
     "typescript": "^4.1.3"
   },
