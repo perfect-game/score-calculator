@@ -1,2 +1,2 @@
-export * from './score-calculator';
+export * from './score-manager';
 export * from './frame';
