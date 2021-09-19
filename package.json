@@ -1,7 +1,7 @@
 {
   "name": "score-calculator",
   "version": "1.0.0",
-  "description": "Template for starting project using TypeScript",
+  "description": "The bowling score calculator engine",
   "main": "./dist/index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
