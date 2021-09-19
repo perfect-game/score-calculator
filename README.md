@@ -10,9 +10,9 @@ You can use `TraditionalScoreManager` class with `TranditionalScoringFrame` clas
 
 ```typescript
 new TraditionalScoreManager()
-  .push(new TraditionalScoringFrame().setFirstPitch(10)) // Strike
-  .push(new TraditionalScoringFrame().setFirstPitch(5).setSecondPitch(5)) // Spare
-  .push(new TraditionalScoringFrame().setFirstPitch(9)) // Open Frame
+  .push(new TraditionalScoringFrame().setFirstPitch(10)) // Striked
+  .push(new TraditionalScoringFrame().setFirstPitch(5).setSecondPitch(5)) // Spared
+  .push(new TraditionalScoringFrame().setFirstPitch(9)) // Opened Frame
   .push(new TraditionalScoringFrame()) // Gutters
   .push(new TraditionalScoringFrame().setFirstPitch(10))
   .push(new TraditionalScoringFrame().setFirstPitch(5).setSecondPitch(5))
@@ -34,9 +34,9 @@ You can use `CurrentFrameScoreManager` class with `CurrentFrameScoringFrame` cla
 
 ```typescript
 new CurrentFrameScoreManager()
-  .push(new CurrentFrameScoringFrame().setFirstPitch(10)) // Strike
-  .push(new CurrentFrameScoringFrame().setFirstPitch(5).setSecondPitch(5)) // Spare
-  .push(new CurrentFrameScoringFrame().setFirstPitch(9)) // Open Frame
+  .push(new CurrentFrameScoringFrame().setFirstPitch(10)) // Striked
+  .push(new CurrentFrameScoringFrame().setFirstPitch(5).setSecondPitch(5)) // Spared
+  .push(new CurrentFrameScoringFrame().setFirstPitch(9)) // Opened Frame
   .push(new CurrentFrameScoringFrame()) // Gutters
   .push(new CurrentFrameScoringFrame().setFirstPitch(10))
   .push(new CurrentFrameScoringFrame().setFirstPitch(5).setSecondPitch(5))
