@@ -1,19 +1,23 @@
 import { Frame } from '../frame';
 
-export abstract class ScoreManager {
+export abstract class ScoreManager<TFrame extends Frame> {
+  protected _frames: TFrame[] = [];
+
+  public get frames(): TFrame[] {
+    return this._frames;
+  }
+
   public get totalScore(): number {
     return this._frames.map((frame) => frame.score).reduce((sum, score) => sum + score);
   }
 
-  protected _frames: Frame[] = [];
-
-  public get frames(): Frame[] {
-    return this._frames;
+  public get lastFrame(): TFrame | undefined {
+    return this._frames[this._frames.length - 1];
   }
 
-  public push(frame: Frame): this {
-    this._frames.push(frame);
+  public abstract push(frame: TFrame): this;
 
-    return this;
+  protected setScores(): void {
+    this._frames.forEach((frame) => frame.setScore());
   }
 }
