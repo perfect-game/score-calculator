@@ -15,4 +15,16 @@ export class TraditionalScoreManager extends ScoreManager<TraditionalScoringFram
 
     return this;
   }
+
+  public pop(): TraditionalScoringFrame | undefined {
+    const frame = this._frames.pop();
+
+    if (this.lastFrame) {
+      this.lastFrame.nextFrame = undefined;
+    }
+
+    this.setScores();
+
+    return frame;
+  }
 }

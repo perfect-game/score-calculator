@@ -12,5 +12,12 @@ export class CurrentFrameScoreManager extends ScoreManager<CurrentFrameScoringFr
 
     return this;
   }
+
+  public pop(): CurrentFrameScoringFrame | undefined {
+    const frame = this._frames.pop();
+
+    this.setScores();
+
+    return frame;
   }
 }

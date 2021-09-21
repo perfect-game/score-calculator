@@ -16,6 +16,7 @@ export abstract class ScoreManager<TFrame extends Frame> {
   }
 
   public abstract push(frame: TFrame): this;
+  public abstract pop(): TFrame | undefined;
 
   protected setScores(): void {
     this._frames.forEach((frame) => frame.setScore());
