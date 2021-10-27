@@ -19,6 +19,7 @@
     "prebuild": "rimraf dist",
     "build": "npm run prebuild; tsc",
     "test": "jest",
+    "coverage": "jest --coverage",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
     "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
   },
