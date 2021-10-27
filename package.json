@@ -4,7 +4,6 @@
   "description": "The bowling score calculator engine",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
     "build": "rm -rf ./dist/; tsc",
     "test": "jest",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
