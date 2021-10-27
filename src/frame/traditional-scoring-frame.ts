@@ -28,7 +28,7 @@ export class TraditionalScoringFrame extends Frame {
   }
 
   public setScore(): this {
-    this._score = this._pitches.reduce((sum: number, score) => sum + (score ?? 0), 0);
+    super.setScore();
 
     if (this.nextFrame) {
       if (this.firstPitch === 10) {

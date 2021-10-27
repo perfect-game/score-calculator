@@ -11,7 +11,7 @@ export abstract class Frame {
     return this._accumulateScore;
   }
 
-  protected _pitches: (number | undefined)[] = [];
+  protected _pitches: number[] = [];
 
   public get firstPitch(): number {
     return this._pitches[0] ?? 0;
@@ -54,7 +54,11 @@ export abstract class Frame {
     return this;
   }
 
-  public abstract setScore(): this;
+  public setScore(): this {
+    this._score = this._pitches.reduce((sum: number, score) => sum + score, 0);
+
+    return this;
+  }
 
   protected setAccumulateScore(): void {
     this._accumulateScore = this.score;

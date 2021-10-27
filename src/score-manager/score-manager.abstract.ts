@@ -8,7 +8,7 @@ export abstract class ScoreManager<TFrame extends Frame> {
   }
 
   public get totalScore(): number {
-    return this._frames.map((frame) => frame.score).reduce((sum, score) => sum + score);
+    return this._frames.map((frame) => frame.score).reduce((sum, score) => sum + score, 0);
   }
 
   public get lastFrame(): TFrame | undefined {

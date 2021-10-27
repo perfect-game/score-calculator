@@ -2,7 +2,7 @@ import { Frame } from './frame.abstract';
 
 export class CurrentFrameScoringFrame extends Frame {
   public setScore(): this {
-    this._score = this._pitches.reduce((sum: number, score) => sum + (score ?? 0), 0);
+    super.setScore();
 
     if (this.firstPitch === 10) {
       this._score = 30;
