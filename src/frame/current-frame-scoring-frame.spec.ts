@@ -5,7 +5,13 @@ describe('Current Frame Scoring Frame', () => {
     describe('Strike', () => {
       const frame = new CurrentFrameScoringFrame();
 
-      test('First Pitch Score', () => {
+      test('Get First Pitch Score', () => {
+        const frame = new CurrentFrameScoringFrame();
+
+        expect(frame.firstPitch).toBe(0);
+      });
+
+      test('Set First Pitch Score', () => {
         frame.setFirstPitch(10);
 
         expect(frame.firstPitch).toBe(10);
@@ -19,13 +25,25 @@ describe('Current Frame Scoring Frame', () => {
     describe('Spare', () => {
       const frame = new CurrentFrameScoringFrame();
 
-      test('First Pitch Score', () => {
+      test('Get First Pitch Score', () => {
+        const frame = new CurrentFrameScoringFrame();
+
+        expect(frame.firstPitch).toBe(0);
+      });
+
+      test('Set First Pitch Score', () => {
         frame.setFirstPitch(5);
 
         expect(frame.firstPitch).toBe(5);
       });
 
-      test('Second Pitch Score', () => {
+      test('Get Second Pitch Score', () => {
+        const frame = new CurrentFrameScoringFrame();
+
+        expect(frame.secondPitch).toBe(0);
+      });
+
+      test('Set Second Pitch Score', () => {
         frame.setSecondPitch(5);
 
         expect(frame.secondPitch).toBe(5);
@@ -39,13 +57,25 @@ describe('Current Frame Scoring Frame', () => {
     describe('Open Frame', () => {
       const frame = new CurrentFrameScoringFrame();
 
-      test('First Pitch Score', () => {
+      test('Get First Pitch Score', () => {
+        const frame = new CurrentFrameScoringFrame();
+
+        expect(frame.firstPitch).toBe(0);
+      });
+
+      test('Set First Pitch Score', () => {
         frame.setFirstPitch(5);
 
         expect(frame.firstPitch).toBe(5);
       });
 
-      test('Second Pitch Score', () => {
+      test('Get Second Pitch Score', () => {
+        const frame = new CurrentFrameScoringFrame();
+
+        expect(frame.secondPitch).toBe(0);
+      });
+
+      test('Set Second Pitch Score', () => {
         frame.setSecondPitch(4);
 
         expect(frame.secondPitch).toBe(4);

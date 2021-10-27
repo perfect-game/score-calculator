@@ -117,4 +117,48 @@ describe('Traditional Score Manager', () => {
       expect(scoreManager.frames[6].accumulateScore).toBe(140);
     });
   });
+
+  describe('Push and Pop All', () => {
+    const frame1 = new TraditionalScoringFrame().setFirstPitch(10);
+    const frame2 = new TraditionalScoringFrame().setFirstPitch(10);
+    const frame3 = new TraditionalScoringFrame().setFirstPitch(10);
+    const frame4 = new TraditionalScoringFrame().setFirstPitch(9).setSecondPitch(1);
+    const frame5 = new TraditionalScoringFrame().setFirstPitch(8).setSecondPitch(2);
+    const frame6 = new TraditionalScoringFrame().setFirstPitch(7).setSecondPitch(3);
+    const frame7 = new TraditionalScoringFrame().setFirstPitch(6).setSecondPitch(4);
+    const frame8 = new TraditionalScoringFrame().setFirstPitch(5).setSecondPitch(5);
+    const frame9 = new TraditionalScoringFrame().setFirstPitch(4).setSecondPitch(6);
+    const frame10 = new TraditionalScoringFrame().setFirstPitch(10).setSecondPitch(10).setThirdPitch(10);
+
+    const scoreManager = new TraditionalScoreManager()
+      .push(frame1)
+      .push(frame2)
+      .push(frame3)
+      .push(frame4)
+      .push(frame5)
+      .push(frame6)
+      .push(frame7)
+      .push(frame8)
+      .push(frame9)
+      .push(frame10);
+
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+    scoreManager.pop();
+
+    test('Frame Length', () => {
+      expect(scoreManager.frames.length).toBe(0);
+    });
+
+    test('Total Score', () => {
+      expect(scoreManager.totalScore).toBe(0);
+    });
+  });
 });
