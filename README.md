@@ -1,4 +1,7 @@
-# score-calculator
+# Score Calculator
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/perfect-game/score-calculator/Validate)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/perfect-game/score-calculator)
 
 [Score Calculator](https://github.com/perfect-game/score-calculator) is a bowling score calculator engine that supports two scoring ways: [Traditional Scoring](https://en.wikipedia.org/wiki/Ten-pin_bowling#Traditional_scoring) and [Current Frame Scoring](https://en.wikipedia.org/wiki/Ten-pin_bowling#World_Bowling_scoring).
 
