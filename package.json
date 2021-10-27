@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The bowling score calculator engine",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rm -rf ./dist/; tsc",
     "test": "jest",
