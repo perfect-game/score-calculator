@@ -1,0 +1,11 @@
+.github
+.vscode
+src
+.eslintrc.js
+.gitignore
+.npmrc
+.prettierrc
+CHANGELOG.md
+jest.config.json
+README.md
+tsconfig.json
